@@ -1,0 +1,109 @@
+/* Nền tổng thể */
+body {
+  background: #f5f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chính */
+#root {
+  min-height: 100vh;
+}
+
+/* Tiêu đề và header */
+h1, h2, h3 {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1565c0;
+  margin-top: 0;
+}
+
+/* Bảng */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fafbfc;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #e3eafc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #e3eafc;
+  color: #1565c0;
+}
+
+tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+/* Form và input */
+input, select, button {
+  margin: 5px 8px 5px 0;
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #1976d2;
+  border-color: #1976d2;
+}
+
+button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Nav */
+nav {
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px #e3eafc;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container, #root > div {
+    padding: 8px !important;
+  }
+  table, th, td {
+    font-size: 13px;
+  }
+  nav {
+    font-size: 14px;
+  }
+  input, select, button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+header img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #1976d2;
+  background: #fff;
+} 

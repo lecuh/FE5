@@ -1,0 +1,173 @@
+/* Tổng thể */
+body {
+  background: #f5f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #1565c0 url('/header-bg.jpg') no-repeat center/cover;
+  color: #fff;
+  padding: 24px 20px 20px 20px;
+  min-height: 90px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px #e3eafc;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #e3eafc;
+}
+
+header img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #1976d2;
+  background: #fff;
+  margin-right: 16px;
+  height: 48px;
+}
+
+/* Nav */
+nav {
+  background: #1976d2;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px #e3eafc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+  color: #ffd600;
+}
+
+nav a[style*="underline"] {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* Main content */
+.container, #root > div > div {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fafbfc;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #e3eafc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #e3eafc;
+  color: #1565c0;
+}
+
+tr:nth-child(even) {
+  background: #f5f7fa;
+}
+
+/* Form và input */
+input, select, button {
+  margin: 5px 8px 5px 0;
+  padding: 7px 12px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #1976d2;
+  border-color: #1976d2;
+}
+
+button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container, #root > div > div {
+    padding: 8px !important;
+  }
+  table, th, td {
+    font-size: 13px;
+  }
+  nav {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input, select, button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+  footer {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+.app-logo {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #1976d2;
+  background: #fff;
+  margin-right: 20px;
+}
